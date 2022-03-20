@@ -1,4 +1,4 @@
-FROM salesforce/salesforcedx
+FROM salesforce/salesforcedx:latest-rc-full
 
 RUN sfdx update
 RUN echo 'y' | sfdx plugins:install @salesforce/sfdx-scanner
